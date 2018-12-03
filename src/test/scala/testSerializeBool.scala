@@ -1,6 +1,6 @@
 import org.scalatest.FunSuite
 
-class test extends FunSuite{
+class testSerializeBool extends FunSuite{
 
   /* test for True */
 
