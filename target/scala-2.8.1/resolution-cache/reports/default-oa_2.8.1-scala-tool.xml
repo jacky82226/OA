@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="oa_2.8.1"
+		revision="0.1"
+		conf="scala-tool"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20181202182453"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.8.1" status="release" pubdate="20101109100239" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, optional, optional(default), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html
+			"/>
+				<metadata-artifact status="successful" details="" size="1785" time="134" location="/Users/jacky82226/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.8.1.xml" searched="true" original-local-location="/Users/jacky82226/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.8.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.8.1/scala-compiler-2.8.1.pom"/>
+				<caller organisation="default" name="oa_2.8.1" conf="scala-tool" rev="2.8.1" rev-constraint-default="2.8.1" rev-constraint-dynamic="2.8.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="successful" details="" size="8984943" time="1800" location="/Users/jacky82226/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.8.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.8.1/scala-compiler-2.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="0.9.91" status="release" pubdate="20070313111842" resolver="public" artresolver="public" homepage="http://jline.sourceforge.net" downloaded="true" searched="true" default="false" conf="compile, master(compile), compile(*), master" position="2">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="6667" time="70" location="/Users/jacky82226/.ivy2/cache/jline/jline/ivy-0.9.91.xml" searched="true" original-local-location="/Users/jacky82226/.ivy2/cache/jline/jline/ivy-0.9.91.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jline/jline/0.9.91/jline-0.9.91.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="optional" rev="0.9.91" rev-constraint-default="0.9.91" rev-constraint-dynamic="0.9.91" callerrev="2.8.1"/>
+				<artifacts>
+					<artifact name="jline" type="jar" ext="jar" status="successful" details="" size="61285" time="561" location="/Users/jacky82226/.ivy2/cache/jline/jline/jars/jline-0.9.91.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/jline/jline/0.9.91/jline-0.9.91.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="3.8.1" status="release" pubdate="20070514143418" resolver="public" artresolver="public" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="compile, master(compile), compile(*), master" position="3">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="successful" details="" size="998" time="64" location="/Users/jacky82226/.ivy2/cache/junit/junit/ivy-3.8.1.xml" searched="true" original-local-location="/Users/jacky82226/.ivy2/cache/junit/junit/ivy-3.8.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom"/>
+				<caller organisation="jline" name="jline" conf="compile" rev="3.8.1" rev-constraint-default="3.8.1" rev-constraint-dynamic="3.8.1" callerrev="0.9.91"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="121070" time="574" location="/Users/jacky82226/.ivy2/cache/junit/junit/jars/junit-3.8.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.8.1" status="release" pubdate="20101109100151" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master" position="1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html
+         "/>
+				<metadata-artifact status="successful" details="" size="1427" time="67" location="/Users/jacky82226/.ivy2/cache/org.scala-lang/scala-library/ivy-2.8.1.xml" searched="true" original-local-location="/Users/jacky82226/.ivy2/cache/org.scala-lang/scala-library/ivy-2.8.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.8.1/scala-library-2.8.1.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="default, compile, runtime, optional, master" rev="2.8.1" rev-constraint-default="2.8.1" rev-constraint-dynamic="2.8.1" callerrev="2.8.1"/>
+				<caller organisation="default" name="oa_2.8.1" conf="scala-tool" rev="2.8.1" rev-constraint-default="2.8.1" rev-constraint-dynamic="2.8.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="successful" details="" size="6496110" time="2089" location="/Users/jacky82226/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.8.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.8.1/scala-library-2.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

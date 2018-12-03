@@ -1,0 +1,5 @@
+[error] /Users/jacky82226/OA/src/main/scala/OA.scala:3:7: overriding method main in trait App of type (args: Array[String])Unit;
+[error]  method main needs `override' modifier
+[error]   def main(args: Array[String]): Unit = {
+[error]       ^
+[error] one error found
